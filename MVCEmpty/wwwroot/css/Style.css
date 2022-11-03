@@ -1,0 +1,58 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    margin:55px;
+    background-color:indianred;
+    
+}
+
+#doctor-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: cornflowerblue;
+    float:right;
+}
+#home-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    float:right;
+}
+#guess-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: forestgreen;
+    float: right;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+    li a:hover {
+        background-color: #111111;
+    }
+#doctor-links li a{
+    color: white;
+}
+    #doctor-links li a:hover {
+        background-color: dodgerblue;
+    }
+#guess-links li a {
+    color: white;
+}
+
+#guess-links li a:hover {
+        background-color: darkgreen;
+}

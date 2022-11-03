@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="home-links">
+             <li>
+                <a asp-action="HomeIndex" asp-controller="Home">Index</a>
+             </li>
+             <li>
+                <a asp-action="About"asp-controller="Home">About me</a>
+             </li>
+             <li>
+                <a asp-action="Contact" asp-controller="Home">Contact</a>
+             </li>
+             <li>
+                <a asp-action="Projects" asp-controller="Home">Projects</a>
+             </li>
+        </ul>
+            <ul id="doctor-links">
+                <li>
+                    <a asp-action="DoctorPage" asp-controller="Doctor">Doctor Page</a>
+                </li>
+            </ul>
+            <ul id="guess-links">
+                <li>
+                    <a asp-action="GuessingGame" asp-controller="Guess">Guessing game</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+        <span>&copy; Alex Vestelind</span><div id="myDiv"></div>
+    </footer>
+    <script src="~/js/jsapp.js"></script>
+    @{
+        Random rnd = new Random();
+        int randomNumber = rnd.Next(101);
+    }
+</body>
+</html>
